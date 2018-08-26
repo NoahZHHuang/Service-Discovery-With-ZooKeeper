@@ -1,8 +1,8 @@
 package com.noah.with_curator;
 
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -13,14 +13,11 @@ import com.netflix.client.ClientFactory;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.config.ConfigurationManager;
 import com.netflix.loadbalancer.BaseLoadBalancer;
-import com.netflix.loadbalancer.ILoadBalancer;
 import com.netflix.loadbalancer.RandomRule;
-import com.netflix.loadbalancer.ZoneAwareLoadBalancer;
 
 import feign.Feign;
-import feign.RetryableException;
-import feign.Retryer;
 import feign.Request.Options;
+import feign.Retryer;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
 import feign.ribbon.LBClient;
